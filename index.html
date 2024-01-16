@@ -1,3 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Test</title>
+    <title>Luca Volpato - portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="data/style.css">
 </head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="bar black card">
+            <p class="hide-small" id="header-name">LUCA VOLPATO</p>
+            <img src="img/menu.png" class="bar-item button padding-large hide-medium hide-large right"
+                title="Toggle Navigation Menu" style="max-height: 50%;" onclick="toggleMenu()">
+            <!-- <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)"
+                onclick="toggleMenu()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars">menu</i> -->
+                <!-- <img src="img/menu.png" style="max-width:100%; max-height:100%;"> -->
+            </a>
+            <a href="#" class="bar-item button padding-large">HOME</a>
+            <a href="#projects" class="bar-item button padding-large hide-small">PROJECTS</a>
+            <a href="#contact" class="bar-item button padding-large hide-small">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="sideNavbar" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+        <a href="#projects" class="bar-item button padding-large" onclick="toggleMenu()">PROJECTS</a>
+        <a href="#contact" class="bar-item button padding-large" onclick="toggleMenu()">CONTACT</a>
+    </div>
+
+    <!-- Page content -->
+
+    <!-- Mock div to add space from fixed navbar -->
+    <div class="navbar" style="position: relative;  pointer-events: none"></div>
+
+    <!-- TODO: Video -->
+    <div class="presentation-video" style="background-color: rgb(0, 71, 71); display: table; text-align: center;">
+        <p style="display: table-cell; vertical-align: middle;">Video</p>
+    </div>
+
+    <div class="content">
+
+        <!-- Name -->
+
+        <div id="name-section" class="content container">
+            <h1 class="wide">LUCA VOLPATO</h1>
+            <p class="justify">TODO</p>
+            <hr style="height: 10px; width: 50%;">
+        </div>
+
+        <!-- Projects Section -->
+        <div class="container content center padding-64" style="max-width:800px" id="projects">
+            <h2 class="wide">PROJECTS</h2>
+            <p class="justify">TODO</p>
+            <div class="row padding-32">
+                <div class="third">
+                    <p>Project 1</p>
+                    <img src="img/box.jpg" class="round margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="third">
+                    <p>Project 2</p>
+                    <img src="img/box.jpg" class="round margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="third">
+                    <p>Project 3</p>
+                    <img src="img/box.jpg" class="round margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="third">
+                    <p>Project 4</p>
+                    <img src="img/box.jpg" class="round margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="third">
+                    <p>Project 5</p>
+                    <img src="img/box.jpg" class="round margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="third">
+                    <p>Project 6</p>
+                    <img src="img/box.jpg" class="round margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- The Contact Section -->
+        <div class="container content padding-64" style="max-width:800px" id="contact">
+            <h2 class="wide center">CONTACT</h2>
+            <p class="opacity center"><i>Connect with me</i></p>
+            <div class="row padding-32">
+                <div class="col m6 large margin-bottom">
+                    <img src="img/globe.png" class="small-image"> Italy<br>
+                    <img src="img/telephone.png" class="small-image"> Phone: TODO<br>
+                    <img src="img/mail.png" class="small-image"> Email: lucavolpato00@gmail.com<br>
+                </div>
+                <div class="col m6">
+                    <form action="/action_page.php" class="contacts-form" target="_blank">
+                        <div class="name-email-container">
+                            <input class="input " type="text" placeholder="Name" required name="Name">
+                            <input class="input " type="text" placeholder="Email" required name="Email">
+                        </div>
+                        <input class="input" type="text" placeholder="Message" required name="Message">
+                        <button class="button right contacts-send" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="center footer">
+        <p class="medium">My links</p>
+        <i class="fa fa-facebook-official hover-opacity"></i>
+        <i class="fa fa-instagram hover-opacity"></i>
+        <i class="fa fa-snapchat hover-opacity"></i>
+        <i class="fa fa-pinterest-p hover-opacity"></i>
+        <i class="fa fa-twitter hover-opacity"></i>
+        <i class="fa fa-linkedin hover-opacity"></i>
+        </p>
+    </footer>
+
+    <script src="data/main.js"></script>
+
+</body>
+
+</html>
